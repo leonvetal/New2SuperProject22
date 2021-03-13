@@ -39,10 +39,11 @@ public class DriverFactory {
                 driver = new ChromeDriver();
             } else if ("BrSt".equals(driverName)) {
                 DesiredCapabilities caps = new DesiredCapabilities();
-                caps.setCapability("browserName", "Android");
-                caps.setCapability("device", "Samsung Galaxy S9");
-                caps.setCapability("realMobile", "true");
-                caps.setCapability("os_version", "8.0");
+                caps.setCapability("os_version", "XP");
+                caps.setCapability("resolution", "1024x768");
+                caps.setCapability("browser", "Chrome");
+                caps.setCapability("browser_version", "48.0");
+                caps.setCapability("os", "Windows");
                 caps.setCapability("name", "BStack-[Java] Sample Test"); // test name
                 caps.setCapability("build", "BStack Build Number 1"); // CI/CD job or build name
                 try {
